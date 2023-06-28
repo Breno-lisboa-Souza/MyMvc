@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "5tKDPjG/28E68aiVuVDap8HpIAKnjgnJJcsJTd5rzpsxnoC0UvzHD7A/mumljJuwNJuWwUFaS5dEadY8HnkIgg==",
+  "success": true,
+  "projectFilePath": "D:\\breno\\dsI\\MyMvc\\MyMvc.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\EtecHAS\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\7.0.8\\microsoft.aspnetcore.jsonpatch.7.0.8.nupkg.sha512",
+    "C:\\Users\\EtecHAS\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\7.0.8\\microsoft.aspnetcore.mvc.newtonsoftjson.7.0.8.nupkg.sha512",
+    "C:\\Users\\EtecHAS\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\EtecHAS\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\EtecHAS\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

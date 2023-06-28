@@ -1,0 +1,28 @@
+@model IEnumerable<JogoViewModel>
+
+<h2>Lista de Jogos</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var jogo in Model)
+        {
+            <tr>
+                <td>@jogo.Nome</td>
+                <td>@jogo.Descricao</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@jogo.Id">Detalhes</a>
+                    <a asp-action="Edit" asp-route-id="@jogo.Id">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@jogo.Id">Excluir</a>
+                    @await Html.PartialAsync("_favoritar", jogo.Id)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

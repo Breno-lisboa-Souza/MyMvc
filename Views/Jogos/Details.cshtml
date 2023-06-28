@@ -1,0 +1,29 @@
+@model MyMvc.Models.JogoViewModel
+@{
+    ViewBag.Title = "Detalhes do Jogo";
+}
+<h2>Detalhes do Jogo</h2>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>@Html.DisplayNameFor(model => model.Id)</dt>
+        <dd>@Html.DisplayFor(model => model.Id)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Nome)</dt>
+        <dd>@Html.DisplayFor(model => model.Nome)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Descricao)</dt>
+        <dd>@Html.DisplayFor(model => model.Descricao)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Genero)</dt>
+        <dd>@Html.DisplayFor(model => model.Genero)</dd>
+
+        <dt>@Html.DisplayNameFor(model => model.Desenvolvedor)</dt>
+        <dd>@Html.DisplayFor(model => model.Desenvolvedor)</dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id}) |
+    @Html.ActionLink("Retornar", "Index")
+</p>
+
