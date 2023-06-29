@@ -1,18 +1,19 @@
 @model IEnumerable<MyMvc.Models.JogoViewModel>
 
-@{ViewBag.Title = "Jogos"; }
+@{ ViewBag.Title = "Jogos"; }
 
-@if (@TempData["Mensagem"] != null)
+@if (TempData["Mensagem"] != null)
 {
     <div class="alert alert-success" role="alert">
-        
-        @Html.Raw(TempData["Mensagem"])</div>
+        @Html.Raw(TempData["Mensagem"])
+    </div>
 }
-<!--Configuração para exibir mensagem de erro -->
-@if (@TempData["MensagemErro"] != null)
+
+@if (TempData["MensagemErro"] != null)
 {
     <div class="alert alert-danger" role="alert">
-        @Html.Raw(TempData["MensagemErro"])</div>
+        @Html.Raw(TempData["MensagemErro"])
+    </div>
 }
 
 <h2>Jogos</h2>
@@ -34,13 +35,11 @@
             <td>@Html.DisplayFor(modelItem => item.Nome)</td>
             <td>@Html.DisplayFor(modelItem => item.Genero)</td>
             <td>
-                @Html.ActionLink("Editar", "Edit", new { id = item.Id }, new { @class = "btn btn-dark"} ) |
-                @Html.ActionLink("Detalhes", "Details", new { id = item.Id }, new { @class = "btn btn-dark"}) |
-                @Html.ActionLink("Deletar", "Delete", new { id = item.Id }
-                    ,new { onclick = "return confirm('Deseja realmente deletar este jogo ?');", @class = "btn btn-dark"  }) |
-                @Html.ActionLink("Favoritar Jogo", "favoritar", new { jogoId = item.Id}
-                    ,new { onclick = "return confirm('Deseja realmente favoritar este jogo ?');", @class = "btn btn-dark"  })
+                @Html.ActionLink("Editar", "Edit", new { id = item.Id }, new { @class = "btn btn-dark" }) |
+                @Html.ActionLink("Detalhes", "Details", new { id = item.Id }, new { @class = "btn btn-warning" }) |
+                @Html.ActionLink("Deletar", "Delete", new { id = item.Id }, new { onclick = "return confirm('Deseja realmente deletar este jogo ?');", @class = "btn btn-danger" }) |
+                @Html.ActionLink("Favoritar Jogo", "favoritar", new { jogoId = item.Id }, new { onclick = "return confirm('Deseja realmente favoritar este jogo ?');", @class = "btn btn-primary" })
             </td>
-        </tr>        
+        </tr>
     }
 </table>

@@ -8,7 +8,7 @@ namespace MyMvc.Controllers
 {
     public class UsuariosController : Controller
     {
-        public string uriBase = "http://brapi2.somee.com/BrApi2/Usuarios/";
+        public string uriBase = "http://BrApi.somee.com/BrApi/Usuarios/";
 
         [HttpGet]
         public IActionResult Index()

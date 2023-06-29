@@ -9,57 +9,57 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MyMvc
 build_property.RootNamespace = MyMvc
-build_property.ProjectDir = D:\breno\dsI\MyMvc\
+build_property.ProjectDir = D:\BrEscolar\Etec23\MyMvc\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\breno\dsI\MyMvc
+build_property.MSBuildProjectDirectory = D:\BrEscolar\Etec23\MyMvc
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/breno/dsI/MyMvc/Views/Home/Index.cshtml]
+[D:/BrEscolar/Etec23/MyMvc/Views/Favoritos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmF2b3JpdG9zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BrEscolar/Etec23/MyMvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/breno/dsI/MyMvc/Views/Home/Privacy.cshtml]
+[D:/BrEscolar/Etec23/MyMvc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/breno/dsI/MyMvc/Views/Jogos/Create.cshtml]
+[D:/BrEscolar/Etec23/MyMvc/Views/Jogos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/breno/dsI/MyMvc/Views/Jogos/Details.cshtml]
+[D:/BrEscolar/Etec23/MyMvc/Views/Jogos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/breno/dsI/MyMvc/Views/Jogos/Edit.cshtml]
+[D:/BrEscolar/Etec23/MyMvc/Views/Jogos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/breno/dsI/MyMvc/Views/Jogos/Favoritar.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb3NcRmF2b3JpdGFyLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/breno/dsI/MyMvc/Views/Jogos/Index.cshtml]
+[D:/BrEscolar/Etec23/MyMvc/Views/Jogos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9nb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/breno/dsI/MyMvc/Views/Shared/Error.cshtml]
+[D:/BrEscolar/Etec23/MyMvc/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/breno/dsI/MyMvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/BrEscolar/Etec23/MyMvc/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/breno/dsI/MyMvc/Views/_ViewImports.cshtml]
+[D:/BrEscolar/Etec23/MyMvc/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/breno/dsI/MyMvc/Views/_ViewStart.cshtml]
+[D:/BrEscolar/Etec23/MyMvc/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/breno/dsI/MyMvc/Views/Shared/_Layout.cshtml]
+[D:/BrEscolar/Etec23/MyMvc/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-13tmf3mf51

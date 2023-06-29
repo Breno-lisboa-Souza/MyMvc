@@ -12,7 +12,7 @@ namespace MyMvc.Controllers
     public class JogosController : Controller
     {
 
-        public string uriBase = "http://brapi2.somee.com/BrApi2/Jogos/";
+        public string uriBase = "http://BrApi.somee.com/BrApi/Jogos/";
 
         [HttpGet]
         public async Task<ActionResult> IndexAsync()
@@ -232,6 +232,72 @@ namespace MyMvc.Controllers
             }
         }
 
-    
+        [HttpGet]
+        public async Task<ActionResult> GetFavoritosAsync(int usuarioId)
+        {
+            try
+            {
+                string uriComplementar = "favoritos/" + usuarioId;
+                HttpClient httpClient = new HttpClient();
+                string token = HttpContext.Session.GetString("SessionTokenUsuario");
+                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+                HttpResponseMessage response = await httpClient.GetAsync(uriBase + uriComplementar);
+                string serialized = await response.Content.ReadAsStringAsync();
+
+                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                {
+                    List<JogoViewModel> jogosFavoritos = await Task.Run(() =>
+                        JsonConvert.DeserializeObject<List<JogoViewModel>>(serialized));
+
+                    return View(jogosFavoritos);
+                }
+                else
+                {
+                    throw new System.Exception(serialized);
+                }
+            }
+            catch (System.Exception ex)
+            {
+                TempData["MensagemErro"] = ex.Message;
+                return RedirectToAction("Index");
+            }
+        }
+
+        [HttpGet]
+        public async Task<ActionResult> RemoverFavoritoAsync(int jogoId, int usuarioId)
+        {
+            try
+            {
+                string uriComplementar = "favoritos/" + jogoId + "/" + usuarioId;
+                HttpClient httpClient = new HttpClient();
+                string token = HttpContext.Session.GetString("SessionTokenUsuario");
+                httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+                HttpResponseMessage response = await httpClient.DeleteAsync(uriBase + uriComplementar);
+                string serialized = await response.Content.ReadAsStringAsync();
+
+                if (response.StatusCode == System.Net.HttpStatusCode.NoContent)
+                {
+                    TempData["Mensagem"] = "Jogo removido dos favoritos com sucesso!";
+                    return RedirectToAction("Index");
+                }
+                else if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+                {
+                    throw new System.Exception("O jogo não está na lista de favoritos do usuário.");
+                }
+                else
+                {
+                    throw new System.Exception(serialized);
+                }
+            }
+            catch (System.Exception ex)
+            {
+                TempData["MensagemErro"] = ex.Message;
+                return RedirectToAction("Index");
+            }
+        }
+
+
     }
 }
